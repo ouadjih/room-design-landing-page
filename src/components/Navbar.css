@@ -21,13 +21,23 @@
     display: none;
 }
 
+.animate {
+    animation-duration: 0.4s;
+    animation-name: animate-fade;
+    animation-delay: 0.1s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes animate-fade {
+    0% { opacity: 0; background-color: bisque;}
+    25% { opacity: .5; }
+    100% { opacity: 1;  }
+  }
 @media screen and (width < 850px) {
 .navbar{
     margin-top: 2em;
     display: flex;
     justify-content: center;
-    
-   
    }
    .nav-items{
     display: none;
@@ -45,13 +55,22 @@
     top: 0;
     left: 0;
     width: 100vw;
-    padding: 2em;
+    padding: 1em;
+   
+   }
+   .item-phone{
+    cursor: pointer;
+   
+   }
+   .item-phone:hover{
+        background-color: rgb(235, 250, 215);
    }
    .hamburger{
     display: block;
     position: absolute;
     left: 2em;
     cursor: pointer;
+    z-index: 99;
 }
    
 }
