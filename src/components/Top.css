@@ -55,11 +55,11 @@
     bottom: 0;
     left: 0;
     padding: 2em;
-    cursor: pointer;
+   
 }
 .left-btn,.right-btn{
     cursor: pointer;
-    padding: 1em;
+    padding: 3em;
 }
 
 @media screen and (width < 850px) {
