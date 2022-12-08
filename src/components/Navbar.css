@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    margin: 1em;
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+   
+    line-height: 1em;
+    gap:2.5em;
+}
+.item{
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--White);
+}
+@media screen and (width < 850px) {
+.navbar{
+    justify-content: space-around;
+   }
+}
