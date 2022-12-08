@@ -12,11 +12,9 @@
   --Very-Dark-Gray: hsl(0, 0%, 27%);
   --league-spartan : league Spartan;
   font-size: 12px;
-  
 }
-
 body{
-  background-color: gray;
+    scroll-behavior: smooth;
     font-family: var(--league-spartan);
 }
 code {

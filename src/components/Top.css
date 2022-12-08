@@ -1,0 +1,96 @@
+.top{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 70vh;
+    width: 100%;
+}
+.top-left{
+    width: 70%;
+    object-fit:cover;
+}
+.top-right{
+    width: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+.top-right-top{
+    padding: 16vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+.top-right-title{
+    font-weight: 650;
+    font-size: 6vh;
+    width: 15ch;
+    color: var(--Black);
+    
+}
+.top-right-description{
+    color: var(--Dark-Gray);
+    font-size: 1.9vh;
+   
+}
+.top-right-btn{
+    text-decoration: none;
+    color: var(--Black);
+    letter-spacing: .3em;
+    font-weight: 400;
+    line-height: 4vh;
+    font-size: 3vh;
+}
+.btn{
+    background-color: var(--Black);
+    display: flex;
+    gap: 7em;
+    padding: 2em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+
+@media screen and (width < 850px) {
+.top{
+    display: flex;
+    flex-direction: column;  
+    height: 80vh;
+}
+.top-left{
+    width: 100vw;
+}
+.top-right{
+    display: flex;
+    flex-direction: column-reverse;
+    position: static;
+   
+}
+.top-right-top{
+    padding: 5vh;
+    display: flex;
+  
+}
+.top-right-title{
+    font-size: 10vw;
+    width: 80vw;
+}
+.top-right-description{
+    max-width: 80vw;
+}
+.btn{
+width: 7em;
+gap: 2.8em;
+padding: 1em;
+position: relative;
+right: 0;
+
+}
+    }
