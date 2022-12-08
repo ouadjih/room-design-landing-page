@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from '../asset/images/logo.svg'
+import hamburger from '../asset/images/icon-hamburger.svg'
 export const Navbar = () => {
+  const [navphone,setNavphone]= useState(false);
+
   return (
-    <nav class="navbar">
-      <img class="logo" src={logo} alt="room" />
-      <ul class="nav-items">
-        <li class="item">Home</li>
-        <li class="item">Shop</li>
-        <li class="item">About</li>
-        <li class="item">Contact</li>
+    <nav className="navbar">
+      <img src={hamburger} className="hamburger" alt="hamburger"/>
+      <img className="logo" src={logo} alt="room" />
+      <ul className="nav-items">
+        <li className="item">Home</li>
+        <li className="item">Shop</li>
+        <li className="item">About</li>
+        <li className="item">Contact</li>
       </ul>
+      
+      {navphone && <ul className="navphone">
+        <li className="item-phone"></li>
+        <li className="item-phone">Home</li>
+        <li className="item-phone">Shop</li>
+        <li className="item-phone">About</li>
+        <li className="item-phone">Contact</li>
+      </ul>}
     </nav>
   );
 };
