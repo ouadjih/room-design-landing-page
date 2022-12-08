@@ -50,13 +50,17 @@
     background-color: var(--Black);
     display: flex;
     gap: 7em;
-    padding: 2em;
+    
     position: absolute;
     bottom: 0;
     left: 0;
+    padding: 2em;
     cursor: pointer;
 }
-
+.left-btn,.right-btn{
+    cursor: pointer;
+    padding: 1em;
+}
 
 @media screen and (width < 850px) {
 .top{
