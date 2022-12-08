@@ -5,23 +5,23 @@
     left: 0;
     z-index: -1;
     height: 70vh;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 .top-left{
-    width: 70%;
+    width: 60%;
     object-fit:cover;
 }
 .top-right{
-    width: 100vh;
+    width: 40%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     position: relative;
-    padding: 0;
+    
 }
 .top-right-top{
-    padding: 16vh;
+    padding: 17vh 6vh;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -30,7 +30,7 @@
 .top-right-title{
     font-weight: 650;
     font-size: 6vh;
-    width: 15ch;
+    
     color: var(--Black);
     
 }
@@ -76,6 +76,7 @@
     display: flex;
     flex-direction: column-reverse;
     position: static;
+    width: 100%;
    
 }
 .top-right-top{
