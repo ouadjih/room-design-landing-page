@@ -19,7 +19,6 @@ export const Navbar = () => {
       </ul>
       
       {navPhone && <ul className="navphone animate">
-        
         <li className="item-phone">Home</li>
         <li className="item-phone">Shop</li>
         <li className="item-phone">About</li>

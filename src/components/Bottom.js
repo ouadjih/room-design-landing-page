@@ -4,11 +4,11 @@ import bottomImgDark from '../asset/images/image-about-dark.jpg'
 import bottomImgLight from '../asset/images/image-about-light.jpg'
 export const Bottom = () => {
   return (
-    <div class="bottom">
-      <img src={bottomImgDark} alt="darkimg" class="bottom-one"/>
-      <div class="bottom-two">
-        <div class="bottom-two-title">About our furniture</div>
-        <div class="bottom-two-description">
+    <div className="bottom">
+      <img src={bottomImgDark} alt="darkimg" className="bottom-one"/>
+      <div className="bottom-two">
+        <div className="bottom-two-title">About our furniture</div>
+        <div className="bottom-two-description">
           Our multifunctional collection blends design and function to suit your
           individual taste. Make each room unique, or pick a cohesive theme that
           best express your interests and what inspires you. Find the furniture
@@ -17,7 +17,7 @@ export const Bottom = () => {
           dream space.
         </div>
       </div>
-      <img src={bottomImgLight} alt="lightimg" class="bottom-three"/>
+      <img src={bottomImgLight} alt="lightimg" className="bottom-three"/>
     </div>
   )
 }

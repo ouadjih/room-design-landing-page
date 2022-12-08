@@ -1,28 +1,46 @@
-import React from 'react'
+import {React,useState} from 'react'
 import './Top.css'
-import firstImg from '../asset/images/desktop-image-hero-1.jpg'
+import data from '../asset/data'
+
 import arrowLeft from '../asset/images/icon-angle-left.svg'
 import arrowRight from '../asset/images/icon-angle-right.svg'
 import iconArrow from '../asset/images/icon-arrow.svg'
 export const Top = () => {
+  const [index,setIndex] = useState(0)
+
+  
+  function nextIndex(){
+
+    setIndex(prevIndex => {
+      console.log("Nextindex")
+      if(prevIndex >= data.length-1)
+      return  0
+      else
+      return  index+1
+    })
+  }
+  function prevIndex(){
+    console.log("previndex")
+    setIndex(prevIndex => {
+      if(prevIndex === 0)
+      return  data.length-1
+      else
+      return  index-1
+  })}
   return (
     <div className="top">
-      <img className="top-left" src={firstImg} alt="hero" />
+      <img className="top-left" src={data[index].src} alt="hero" />
       <div className="top-right">
         <div className="top-right-top">
-          <div className="top-right-title">Discover innovative ways to decorate</div>
+          <div className="top-right-title">{data[index].title}</div>
         <div className="top-right-description">
-          We provide unmatched quality, comfort, and style for property owners
-          across the country. Our experts combine form and function in bringing
-          your vision to life. Create a room in your own style with our
-          collection and make your property a reflection of you and what you
-          love.
+        {data[index].description}
         </div>
         <a className="top-right-btn" href="/">Shop now <img src={iconArrow} alt="arrow"/></a>
         </div>
         <div className="btn">
-          <img className="btn-left" src={arrowLeft} alt="btn-left" />
-          <img className="btn-right" src={arrowRight} alt="btn-right" />
+          <img className="btn-left" onClick={prevIndex} src={arrowLeft} alt="btn-left" />
+          <img className="btn-right" onClick={nextIndex} src={arrowRight} alt="btn-right" />
         </div>
       </div>
     </div>
