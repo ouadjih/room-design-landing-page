@@ -6,6 +6,7 @@
     z-index: -1;
     height: 70vh;
     width: 100%;
+    overflow-x: hidden;
 }
 .top-left{
     width: 70%;
